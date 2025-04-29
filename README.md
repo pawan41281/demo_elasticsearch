@@ -2,7 +2,7 @@
 
 **docker network create elasticsearch-network**
 
-**docker run --rm --name elasticsearch-container -p 9200:9200 -p 9300:9300 --network elasticsearch-network -e "discovery.type=single-node" -e "xpack.security.enabled=false" elasticsearch:8.18.0**
+**docker run --rm --name elasticsearch-container -p 9200:9200 -p 9300:9300 --network elasticsearch-network -e "discovery.type=single-node" -e "xpack.security.enabled=false" -v d:/data/elasticserch:/usr/share/elasticsearch/data elasticsearch:8.18.**
 
 **mvn clean install -Dmaven.test.skip=true**
 
