@@ -17,4 +17,5 @@ public class EmployeeEntity {
 	private String department;
 	private String designation;
 
+	private AddressEntity addressEntity;
 }
